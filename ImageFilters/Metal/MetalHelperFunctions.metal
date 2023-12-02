@@ -9,12 +9,6 @@
 #include <SwiftUI/SwiftUI_Metal.h>
 using namespace metal;
 
-kernel void grayscaleFilter(texture2d<float, access::read_write> inputTexture [[texture(0)]], uint2 gid [[thread_position_in_grid]]) {
-    float4 color = inputTexture.read(gid);
-    float luminance = dot(color.rgb, float3(0.2126, 0.7152, 0.0722));
-    inputTexture.write(float4(luminance, luminance, luminance, color.a), gid);
-}
-
 [[ stitchable ]] half4 checkerboard(float2 position, half4 currentColor, float size, half4 newColor) {
     uint2 posInChecks = uint2(position.x / size, position.y / size);
     bool isColor = (posInChecks.x ^ posInChecks.y) & 1;
