@@ -16,6 +16,8 @@
 		0A4A24112B1A91E600B7787E /* FilterFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4A24102B1A91E600B7787E /* FilterFunction.swift */; };
 		0A4A24172B1A9E7900B7787E /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4A24162B1A9E7900B7787E /* FiltersView.swift */; };
 		0A4A241A2B1AA04700B7787E /* CustomShaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4A24192B1AA04700B7787E /* CustomShaderButton.swift */; };
+		0AA487712B1B85910078F98D /* CollageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA487702B1B85910078F98D /* CollageView.swift */; };
+		0AA487732B1B86190078F98D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA487722B1B86190078F98D /* ImagePicker.swift */; };
 		0AA626462B19391A007CD00E /* ImageFiltersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA626452B19391A007CD00E /* ImageFiltersApp.swift */; };
 		0AA626482B19391A007CD00E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA626472B19391A007CD00E /* ContentView.swift */; };
 		0AA6264A2B19391B007CD00E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA626492B19391B007CD00E /* Assets.xcassets */; };
@@ -56,6 +58,8 @@
 		0A4A24102B1A91E600B7787E /* FilterFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterFunction.swift; sourceTree = "<group>"; };
 		0A4A24162B1A9E7900B7787E /* FiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
 		0A4A24192B1AA04700B7787E /* CustomShaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShaderButton.swift; sourceTree = "<group>"; };
+		0AA487702B1B85910078F98D /* CollageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageView.swift; sourceTree = "<group>"; };
+		0AA487722B1B86190078F98D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		0AA626422B19391A007CD00E /* ImageFilters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFilters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA626452B19391A007CD00E /* ImageFiltersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFiltersApp.swift; sourceTree = "<group>"; };
 		0AA626472B19391A007CD00E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 			children = (
 				0A4A24022B19401600B7787E /* MetalShader.swift */,
 				0A4A24102B1A91E600B7787E /* FilterFunction.swift */,
+				0AA487722B1B86190078F98D /* ImagePicker.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -145,6 +150,14 @@
 				0A4A24062B19620900B7787E /* FilterButton.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		0AA4876F2B1B85530078F98D /* Collage Screen */ = {
+			isa = PBXGroup;
+			children = (
+				0AA487702B1B85910078F98D /* CollageView.swift */,
+			);
+			path = "Collage Screen";
 			sourceTree = "<group>";
 		};
 		0AA626392B19391A007CD00E = {
@@ -177,6 +190,7 @@
 				0A4A24042B1955DC00B7787E /* HomeView.swift */,
 				0A4A24122B1A9D1B00B7787E /* Custom Shaders Screen */,
 				0A4A24152B1A9D9700B7787E /* Filters Screen */,
+				0AA4876F2B1B85530078F98D /* Collage Screen */,
 				0AA6266F2B193B30007CD00E /* Metal */,
 				0A4A24142B1A9D5000B7787E /* Helpers */,
 				0AA626492B19391B007CD00E /* Assets.xcassets */,
@@ -480,12 +494,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA487732B1B86190078F98D /* ImagePicker.swift in Sources */,
 				0A4A240D2B1A2AC900B7787E /* CustomShaders.metal in Sources */,
 				0AA626482B19391A007CD00E /* ContentView.swift in Sources */,
 				0A4A24112B1A91E600B7787E /* FilterFunction.swift in Sources */,
 				0A4A241A2B1AA04700B7787E /* CustomShaderButton.swift in Sources */,
 				0A4A24012B193FF000B7787E /* MetalHelperFunctions.metal in Sources */,
 				0A4A24172B1A9E7900B7787E /* FiltersView.swift in Sources */,
+				0AA487712B1B85910078F98D /* CollageView.swift in Sources */,
 				0A4A240F2B1A2B8D00B7787E /* CustomShadersView.swift in Sources */,
 				0A4A24052B1955DC00B7787E /* HomeView.swift in Sources */,
 				0AA626462B19391A007CD00E /* ImageFiltersApp.swift in Sources */,

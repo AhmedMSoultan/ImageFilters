@@ -18,6 +18,10 @@ struct HomeView: View {
             NavigationLink(destination: FiltersView()) {
                 Text("Custom filters")
             }
+            
+            NavigationLink(destination: CollageView()) {
+                Text("Make Collage")
+            }
         }
         .navigationTitle("Photo Editor")
     }
